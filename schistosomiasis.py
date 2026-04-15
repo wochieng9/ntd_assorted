@@ -832,7 +832,6 @@ def chart_trajectory(results: pd.DataFrame) -> alt.Chart:
     )
     return (traj + ephp_line).interactive()
 
-
 def chart_dalys(results: pd.DataFrame) -> alt.Chart:
     df = results[["Year", "daly_total_mean", "daly_mda_mean"]].melt(
         "Year", var_name="Scenario", value_name="DALYs"
