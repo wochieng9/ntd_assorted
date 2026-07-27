@@ -1493,7 +1493,7 @@ with tabs[4]:
             download_df(sens_df, "Download full sensitivity analysis (CSV)", "sensitivity_analysis.csv")
         else:
             if not run_mansoni or m_pop <= 0 or m_prev <= 0:
-                st.info("Set S. mansoni disease parameters in the Disease inputs tab first.")
+                st.info("Set disease parameters in the Disease inputs tab first.")
             elif len(frequency_scenarios_sens) == 0:
                 st.info("Select at least one frequency scenario in the Sensitivity analysis panel (left sidebar).")
             else:
